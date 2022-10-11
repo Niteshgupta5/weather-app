@@ -143,7 +143,7 @@ function WeatherDetails(props) {
                         <div className='col-sm-2'>
                         {(forecast?.list)?.map(function(list,index,arr){
                                var h= (list.dt_txt).slice(11,13);
-                               if(h>12){
+                               if(h>=12){
                                 dttxt[index] = h+" PM";
                                }
                                else{
